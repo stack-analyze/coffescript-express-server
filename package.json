@@ -1,0 +1,23 @@
+{
+  "name": "coffescript-express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ext coffee --exec coffee src/index.coffee",
+    "build": "coffee -o build -c src",
+    "start": "node build/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.5.1",
+    "nodemon": "^2.0.2"
+  }
+}
